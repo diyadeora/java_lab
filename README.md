@@ -23,3 +23,18 @@ System.out.println(div(n1,n2));
 }
 ```
 <img width="867" height="79" alt="image" src="https://github.com/user-attachments/assets/4813d2f8-ea7f-460d-b95f-27d19bbc83e0" />
+```
+class Even{
+public satic void main(String[] args){
+int a=9;
+if(a%2==0)
+{
+System.out.println("a is even number");
+}
+else
+{
+System.out.println("a is odd number");
+}
+}
+```
+}
