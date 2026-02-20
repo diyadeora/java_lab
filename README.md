@@ -1,3 +1,4 @@
+```
 public class Cla{
 static int add(int a,int b){
 return a+b;
@@ -20,3 +21,4 @@ System.out.println(mul(n1,n2));
 System.out.println(div(n1,n2));
 }
 }
+```
