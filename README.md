@@ -36,5 +36,5 @@ else
 System.out.println("a is odd number");
 }
 }
-```
 }
+```
