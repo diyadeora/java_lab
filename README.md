@@ -36,4 +36,4 @@ class Hey{
     }
 }
 ```
-<img width="867" height="79" alt="image" src="https://github.com/user-attachments/assets/35dfc84c-e665-4cdf-8993-abe7c3d287aa" />
+<img width="1613" height="99" alt="image" src="https://github.com/user-attachments/assets/e9e35d25-dc56-47f0-b95e-c1f06f75ba20" />
