@@ -38,6 +38,48 @@ class Hey{
     }
 }
 
-## assi-3
 ```
 <img width="1613" height="99" alt="image" src="https://github.com/user-attachments/assets/8566a3e4-d945-4220-8454-350b8460a533" />
+
+## assi-3
+```
+import java.util.Scanner;
+
+class Distance {
+    int meters;
+    int centimeters;
+}
+
+public class DistanceAddition {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Distance d1 = new Distance();
+        Distance d2 = new Distance();
+        Distance result = new Distance();
+
+        System.out.println("Enter first distance (meters centimeters):");
+        d1.meters = sc.nextInt();
+        d1.centimeters = sc.nextInt();
+
+        System.out.println("Enter second distance (meters centimeters):");
+        d2.meters = sc.nextInt();
+        d2.centimeters = sc.nextInt();
+
+        // Add centimeters
+        result.centimeters = d1.centimeters + d2.centimeters;
+        result.meters = d1.meters + d2.meters;
+
+        // Convert extra centimeters to meters
+        if (result.centimeters >= 100) {
+            result.meters += result.centimeters / 100;
+            result.centimeters = result.centimeters % 100;
+        }
+
+        System.out.println("Sum of distances = " + result.meters + 
+                " meters " + result.centimeters + " centimeters");
+
+        sc.close();
+    }
+}
+```
