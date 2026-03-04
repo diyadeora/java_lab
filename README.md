@@ -2,9 +2,9 @@
 
 [program-2 wap for hello world](#assi-2)
 
-[program-3 wap for the addition of two distances where each distance is given in meter, c-m and mm](#assi-3)
+[program-3 wap for the addition of two distances where each distance is given in meter, c-m](#assi-3)
 
-[program-4 wap for the addition of two times where each time is given in hours, minutes and seconds](#assi-4)
+[program-4 wap for the addition of two times where each time is given in hours, minutes](#assi-4)
 ## assi-1
 ```
 public class Cla{
