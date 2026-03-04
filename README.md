@@ -5,6 +5,11 @@
 [program-3 wap for the addition of two distances where each distance is given in meter, c-m](#assi-3)
 
 [program-4 wap for the addition of two times where each time is given in hours, minutes](#assi-4)
+
+[program-5 wap for the addition of two times where each time is given in hours, minutes and seconds](#assi-5)
+
+[program-6 wap for the addition of two distance where each distance is given in meter, centi-meter and millimeter](#assi-6)
+
 ## assi-1
 ```
 public class Cla{
