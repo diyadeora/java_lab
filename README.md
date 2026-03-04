@@ -137,3 +137,50 @@ public class TimeAddition {
 ```
 <img width="626" height="305" alt="image" src="https://github.com/user-attachments/assets/0f2e6446-8e89-477e-9b6f-0c98f635cfaa" />
 
+## assi-5
+```
+
+import java.util.Scanner;
+
+class Time {
+    int hours;
+    int minutes;
+    int seconds;
+}
+
+public class TimeAddition {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Time t1 = new Time();
+        Time t2 = new Time();
+
+        System.out.println("Enter first time (hours minutes seconds):");
+        t1.hours = sc.nextInt();
+        t1.minutes = sc.nextInt();
+        t1.seconds = sc.nextInt();
+
+        System.out.println("Enter second time (hours minutes seconds):");
+        t2.hours = sc.nextInt();
+        t2.minutes = sc.nextInt();
+        t2.seconds = sc.nextInt();
+
+        // Convert total time into seconds
+        int totalSeconds = (t1.hours * 3600 + t1.minutes * 60 + t1.seconds)
+                         + (t2.hours * 3600 + t2.minutes * 60 + t2.seconds);
+
+        // Convert back to hours, minutes, and seconds
+        int resultHours = totalSeconds / 3600;
+        totalSeconds = totalSeconds % 3600;
+        int resultMinutes = totalSeconds / 60;
+        int resultSeconds = totalSeconds % 60;
+
+        System.out.println("Sum of time = " + resultHours + " hours "
+                + resultMinutes + " minutes " + resultSeconds + " seconds");
+
+        sc.close();
+    }
+}
+
+```
+<img width="608" height="383" alt="image" src="https://github.com/user-attachments/assets/64f73315-7f1d-47cb-8caa-93579fd640fa" />
