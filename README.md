@@ -256,3 +256,37 @@ public class DistanceAddition {
 
 <img width="793" height="345" alt="image" src="https://github.com/user-attachments/assets/2bbce30e-5fa5-4d40-baf2-3c7bc8bb5a3d" />
 
+## assi-7
+
+```
+
+import java.util.Scanner;
+
+public class ReverseArray {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of elements: ");
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+
+        System.out.println("Enter elements:");
+        for(int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Reversing array
+        System.out.println("Reversed array:");
+        for(int i = n - 1; i >= 0; i--) {
+            System.out.print(arr[i] + " ");
+        }
+
+        sc.close();
+    }
+}
+
+```
+<img width="665" height="376" alt="image" src="https://github.com/user-attachments/assets/0b326ff2-5fcb-4466-a303-84a83a1514c6" />
+
+
