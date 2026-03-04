@@ -184,3 +184,53 @@ public class TimeAddition {
 
 ```
 <img width="608" height="383" alt="image" src="https://github.com/user-attachments/assets/64f73315-7f1d-47cb-8caa-93579fd640fa" />
+
+## assi-6
+
+```
+
+import java.util.Scanner;
+
+class Distance {
+    int meters;
+    int centimeters;
+    int millimeters;
+}
+
+public class DistanceAddition {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Distance d1 = new Distance();
+        Distance d2 = new Distance();
+
+        System.out.println("Enter first distance (meters centimeters millimeters):");
+        d1.meters = sc.nextInt();
+        d1.centimeters = sc.nextInt();
+        d1.millimeters = sc.nextInt();
+
+        System.out.println("Enter second distance (meters centimeters millimeters):");
+        d2.meters = sc.nextInt();
+        d2.centimeters = sc.nextInt();
+        d2.millimeters = sc.nextInt();
+
+        // Convert both distances to millimeters
+        int totalMillimeters = (d1.meters * 1000 + d1.centimeters * 10 + d1.millimeters)
+                            + (d2.meters * 1000 + d2.centimeters * 10 + d2.millimeters);
+
+        // Convert back to meters, centimeters, and millimeters
+        int resultMeters = totalMillimeters / 1000;
+        totalMillimeters = totalMillimeters % 1000;
+        int resultCentimeters = totalMillimeters / 10;
+        int resultMillimeters = totalMillimeters % 10;
+
+        System.out.println("Sum of distances = " + resultMeters + " meters "
+                + resultCentimeters + " centimeters " + resultMillimeters + " millimeters");
+
+        sc.close();
+    }
+}
+```
+
+<img width="793" height="345" alt="image" src="https://github.com/user-attachments/assets/2bbce30e-5fa5-4d40-baf2-3c7bc8bb5a3d" />
+
