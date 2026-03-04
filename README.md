@@ -88,3 +88,47 @@ public class DistanceAddition {
 <img width="673" height="374" alt="image" src="https://github.com/user-attachments/assets/b129ad7c-3423-4fd7-8218-ce01ddac8d42" />
 
 ## assi-4
+```
+import java.util.Scanner;
+
+class Time {
+    int hours;
+    int minutes;
+}
+
+public class TimeAddition {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        Time t1 = new Time();
+        Time t2 = new Time();
+        Time result = new Time();
+
+        System.out.println("Enter first time (hours minutes):");
+        t1.hours = sc.nextInt();
+        t1.minutes = sc.nextInt();
+
+        System.out.println("Enter second time (hours minutes):");
+        t2.hours = sc.nextInt();
+        t2.minutes = sc.nextInt();
+
+        // Add minutes
+        result.minutes = t1.minutes + t2.minutes;
+        result.hours = t1.hours + t2.hours;
+
+        // Convert extra minutes to hours
+        if (result.minutes >= 60) {
+            result.hours += result.minutes / 60;
+            result.minutes = result.minutes % 60;
+        }
+
+        System.out.println("Sum of time = " + result.hours + 
+                " hours " + result.minutes + " minutes");
+
+        sc.close();
+    }
+}
+
+```
+<img width="626" height="305" alt="image" src="https://github.com/user-attachments/assets/0f2e6446-8e89-477e-9b6f-0c98f635cfaa" />
+
