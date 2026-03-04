@@ -3,6 +3,8 @@
 [program-2 wap for hello world](#assi-2)
 
 [program-3 wap for the addition of two distances where each distance is given in meter, c-m and mm](#assi-3)
+
+[program-4 wap for the addition of two times where each time is given in hours, minutes and seconds](#assi-4)
 ## assi-1
 ```
 public class Cla{
@@ -84,3 +86,5 @@ public class DistanceAddition {
 }
 ```
 <img width="673" height="374" alt="image" src="https://github.com/user-attachments/assets/b129ad7c-3423-4fd7-8218-ce01ddac8d42" />
+
+## assi-4
