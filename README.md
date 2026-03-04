@@ -1,6 +1,8 @@
 [program-1 wap for arithmatic logics](#assi-1)
 
 [program-2 wap for hello world](#assi-2)
+
+[program-3 wap for the addition of two distances where each distance is given in meter, c-m and mm](#assi-3)
 ## assi-1
 ```
 public class Cla{
@@ -35,5 +37,7 @@ class Hey{
         System.out.println("hello");
     }
 }
+
+## assi-3
 ```
 <img width="1613" height="99" alt="image" src="https://github.com/user-attachments/assets/8566a3e4-d945-4220-8454-350b8460a533" />
