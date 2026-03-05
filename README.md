@@ -465,6 +465,36 @@ class RowSum {
 ```
 <img width="281" height="109" alt="image" src="https://github.com/user-attachments/assets/dd1f5c56-2498-47c3-a1d7-1c37c71c7ef2" />
 
+## assi-12
+
+```
+class ColumnSum {
+    int a[][] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    void sumColumns() {
+        for(int j = 0; j < 3; j++) {
+            int sum = 0;
+            for(int i = 0; i < 3; i++) {
+                sum = sum + a[i][j];
+            }
+            System.out.println("Sum of column " + (j+1) + " = " + sum);
+        }
+    }
+
+    public static void main(String args[]) {
+        ColumnSum obj = new ColumnSum();
+        obj.sumColumns();
+    }
+}
+
+```
+<img width="290" height="107" alt="image" src="https://github.com/user-attachments/assets/40c0603d-7551-449b-80ec-a3a5d0f816c4" />
+
+
 
 
 
