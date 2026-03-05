@@ -386,6 +386,57 @@ class SumMatrix {
 
 <img width="618" height="268" alt="image" src="https://github.com/user-attachments/assets/7b6b88b6-16ec-45f2-81f0-641ca9de00bc" />
 
+## assi-10
+
+```
+
+class MatrixMultiplication {
+    int a[][] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    int b[][] = {
+        {1, 2, 1},
+        {2, 1, 2},
+        {1, 2, 1}
+    };
+
+    int c[][] = new int[3][3];
+
+    void multiply() {
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                for(int k = 0; k < 3; k++) {
+                    c[i][j] = c[i][j] + a[i][k] * b[k][j];
+                }
+            }
+        }
+    }
+
+    void display() {
+        System.out.println("Result Matrix:");
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(c[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[]) {
+        MatrixMultiplication obj = new MatrixMultiplication();
+        obj.multiply();
+        obj.display();
+    }
+}
+
+```
+
+<img width="385" height="149" alt="image" src="https://github.com/user-attachments/assets/e6d2221c-004c-43d2-91e9-b31656f3de4e" />
+
+
 
 
 
