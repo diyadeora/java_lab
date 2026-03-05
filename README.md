@@ -550,6 +550,33 @@ class Factorial {
 
 <img width="309" height="67" alt="image" src="https://github.com/user-attachments/assets/d793add4-ea0b-4354-a1e3-b7ad7c800b87" />
 
+## assi-15
+
+```
+class Fibonacci {
+    void series(int n) {
+        int a = 0, b = 1, c;
+        System.out.print(a + " " + b);
+
+        for (int i = 2; i < n; i++) {
+            c = a + b;
+            System.out.print(" " + c);
+            a = b;
+            b = c;
+        }
+    }
+
+    public static void main(String args[]) {
+        Fibonacci obj = new Fibonacci();
+        obj.series(10);
+    }
+}
+
+```
+
+<img width="299" height="65" alt="image" src="https://github.com/user-attachments/assets/0478f4a0-6641-4351-a6a8-34684c4f419c" />
+
+
 
 
 
