@@ -527,6 +527,31 @@ class DiagonalSum {
 
 <img width="305" height="80" alt="image" src="https://github.com/user-attachments/assets/2cc3d626-40df-4b2c-a55b-05ce49cbfd63" />
 
+## assi-14
+
+```
+class Factorial {
+    int fact = 1;
+
+    void calculate(int n) {
+        for(int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        System.out.println("Factorial = " + fact);
+    }
+
+    public static void main(String args[]) {
+        Factorial obj = new Factorial();
+        obj.calculate(5);
+    }
+     }
+
+```
+
+<img width="309" height="67" alt="image" src="https://github.com/user-attachments/assets/d793add4-ea0b-4354-a1e3-b7ad7c800b87" />
+
+
+
 
 
 
