@@ -292,6 +292,57 @@ public class ReverseArray {
 ## assi-8
 
 ```
+class TransposeMatrix {
+    int a[][] = new int[3][3];
+    int t[][] = new int[3][3];
+
+    void input() {
+        int k = 1;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                a[i][j] = k;
+                k++;
+            }
+        }
+    }
+
+    void transpose() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                t[i][j] = a[j][i];
+            }
+        }
+    }
+
+    void display() {
+        System.out.println("Original Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Transpose Matrix:");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(t[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[]) {
+        TransposeMatrix obj = new TransposeMatrix();
+        obj.input();
+        obj.transpose();
+        obj.display();
+    }
+}
+
+```
+
+<img width="738" height="365" alt="image" src="https://github.com/user-attachments/assets/30f6b5e9-c301-4f46-a3fa-b8cffed9c018" />
 
 
 
