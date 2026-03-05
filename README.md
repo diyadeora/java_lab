@@ -576,6 +576,36 @@ class Fibonacci {
 
 <img width="299" height="65" alt="image" src="https://github.com/user-attachments/assets/0478f4a0-6641-4351-a6a8-34684c4f419c" />
 
+## assi-16
+
+```
+class Palindrome {
+    void check(int n) {
+        int temp = n, rev = 0, rem;
+
+        while (temp != 0) {
+            rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp = temp / 10;
+        }
+
+        if (rev == n)
+            System.out.println("Palindrome Number");
+        else
+            System.out.println("Not a Palindrome Number");
+    }
+
+    public static void main(String args[]) {
+        Palindrome obj = new Palindrome();
+        obj.check(121);
+    }
+}
+
+```
+
+<img width="311" height="70" alt="image" src="https://github.com/user-attachments/assets/f14fa585-7b21-4ade-be50-d104f36c18e2" />
+
+
 
 
 
