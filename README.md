@@ -605,6 +605,36 @@ class Palindrome {
 
 <img width="311" height="70" alt="image" src="https://github.com/user-attachments/assets/f14fa585-7b21-4ade-be50-d104f36c18e2" />
 
+## assi-17
+
+```
+class Armstrong {
+    void check(int n) {
+        int temp = n, sum = 0, rem;
+
+        while (temp != 0) {
+            rem = temp % 10;
+            sum = sum + (rem * rem * rem);
+            temp = temp / 10;
+        }
+
+        if (sum == n)
+            System.out.println("Armstrong Number");
+        else
+            System.out.println("Not Armstrong Number");
+    }
+
+    public static void main(String args[]) {
+        Armstrong obj = new Armstrong();
+        obj.check(153);
+    }
+}
+
+```
+
+<img width="306" height="77" alt="image" src="https://github.com/user-attachments/assets/eb86467d-b2ee-44ea-9e9e-41c32af916c3" />
+
+
 
 
 
