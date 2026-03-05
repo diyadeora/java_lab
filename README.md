@@ -344,6 +344,49 @@ class TransposeMatrix {
 
 <img width="738" height="365" alt="image" src="https://github.com/user-attachments/assets/30f6b5e9-c301-4f46-a3fa-b8cffed9c018" />
 
+## assi-9
+
+```
+class SumMatrix {
+    int a[][] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+    int sum = 0;
+
+    void calculateSum() {
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                sum = sum + a[i][j];
+            }
+        }
+    }
+
+    void display() {
+        System.out.println("Matrix:");
+        for(int i = 0; i < 3; i++) {
+            for(int j = 0; j < 3; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Sum of all elements = " + sum);
+    }
+
+    public static void main(String args[]) {
+        SumMatrix obj = new SumMatrix();
+        obj.calculateSum();
+        obj.display();
+    }
+}
+
+```
+
+<img width="618" height="268" alt="image" src="https://github.com/user-attachments/assets/7b6b88b6-16ec-45f2-81f0-641ca9de00bc" />
+
+
 
 
 
