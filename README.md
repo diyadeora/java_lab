@@ -494,6 +494,40 @@ class ColumnSum {
 ```
 <img width="290" height="107" alt="image" src="https://github.com/user-attachments/assets/40c0603d-7551-449b-80ec-a3a5d0f816c4" />
 
+## assi-13
+
+```
+
+class DiagonalSum {
+    int a[][] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    void sumDiagonals() {
+        int primary = 0, secondary = 0;
+
+        for(int i = 0; i < 3; i++) {
+            primary = primary + a[i][i];
+            secondary = secondary + a[i][2 - i];
+        }
+
+        System.out.println("Sum of Primary Diagonal = " + primary);
+        System.out.println("Sum of Secondary Diagonal = " + secondary);
+    }
+
+    public static void main(String args[]) {
+        DiagonalSum obj = new DiagonalSum();
+        obj.sumDiagonals();
+    }
+}
+
+```
+
+<img width="305" height="80" alt="image" src="https://github.com/user-attachments/assets/2cc3d626-40df-4b2c-a55b-05ce49cbfd63" />
+
+
 
 
 
