@@ -436,6 +436,37 @@ class MatrixMultiplication {
 
 <img width="385" height="149" alt="image" src="https://github.com/user-attachments/assets/e6d2221c-004c-43d2-91e9-b31656f3de4e" />
 
+## assi-11
+
+```
+class RowSum {
+    int a[][] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
+    void sumRows() {
+        for(int i = 0; i < 3; i++) {
+            int sum = 0;
+            for(int j = 0; j < 3; j++) {
+                sum = sum + a[i][j];
+            }
+            System.out.println("Sum of row " + (i+1) + " = " + sum);
+        }
+    }
+
+    public static void main(String args[]) {
+        RowSum obj = new RowSum();
+        obj.sumRows();
+    }
+}
+
+```
+<img width="281" height="109" alt="image" src="https://github.com/user-attachments/assets/dd1f5c56-2498-47c3-a1d7-1c37c71c7ef2" />
+
+
+
 
 
 
