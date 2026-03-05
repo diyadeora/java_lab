@@ -1,6 +1,6 @@
 [program-1 wap for arithmatic logics](#assi-1)
 
-[program-2 wap for hello world](#assi-2)
+[program-2 wap for hello world](#assi-2) 
 
 [program-3 wap for the addition of two distances where each distance is given in meter, c-m](#assi-3)
 
@@ -288,5 +288,11 @@ public class ReverseArray {
 
 ```
 <img width="665" height="376" alt="image" src="https://github.com/user-attachments/assets/0b326ff2-5fcb-4466-a303-84a83a1514c6" />
+
+## assi-8
+
+```
+
+
 
 
