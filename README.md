@@ -32,6 +32,20 @@
 
 [program-17 wap for armstrong numbers](#assi-17)
 
+[program-18 wap for](#assi-18)
+
+[program-19 wap for ](#assi-19)
+
+[program-20 wap for ](#assi-20)
+
+[program-21 wap for](#assi-21)
+
+[program-22 wap for](#assi-22)
+
+[program-23 wap for](#assi-23)
+
+[program-24 wap for](#assi-24)
+
 ## assi-1
 ```
 public class Cla{
