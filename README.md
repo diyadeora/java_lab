@@ -1,6 +1,6 @@
 [program-1 wap for arithmatic logics](#assi-1)
 
-[program-2 wap for hello world](#assi-2)  
+[program-2 wap for hello world](#assi-2)   
 
 [program-3 wap for the addition of two distances where each distance is given in meter, c-m](#assi-3)
 
