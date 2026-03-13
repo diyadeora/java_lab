@@ -648,6 +648,32 @@ class Armstrong {
 
 <img width="306" height="77" alt="image" src="https://github.com/user-attachments/assets/eb86467d-b2ee-44ea-9e9e-41c32af916c3" />
 
+## assi-18
+
+```
+class Pattern {
+
+    void printPattern(int n)   // function
+    {
+        for(int i=1;i<=n;i++)
+        {
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String args[])
+    {
+        Pattern obj = new Pattern();   // object creation
+        obj.printPattern(5);           // function call
+    }
+}
+
+```
+
 
 
 
