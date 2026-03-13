@@ -32,7 +32,7 @@
 
 [program-17 wap for armstrong numbers](#assi-17)
 
-[program-18 wap for](#assi-18)
+[program-18 wap for making patterns](#assi-18)
 
 [program-19 wap for ](#assi-19)
 
