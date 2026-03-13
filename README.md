@@ -93,9 +93,9 @@ class Distance {
     int centimeters;
 }
 
-public class DistanceAddition {
+public class DistanceAddition { //declares the main class
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // creates a scanner object named sc
 
         Distance d1 = new Distance();
         Distance d2 = new Distance();
