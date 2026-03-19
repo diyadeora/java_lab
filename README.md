@@ -673,6 +673,8 @@ class Pattern {
 }
 
 ```
+<img width="326" height="185" alt="image" src="https://github.com/user-attachments/assets/6dced26a-8590-43b4-82eb-3c0ffa7c6db3" />
+
 
 
 
