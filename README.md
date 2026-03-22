@@ -16,7 +16,7 @@
 
 [program-9 collect the code of c language for any 5 operation, convert the logic to java in object oriented fashion](#assi-9)
 
-
+[program-10 demonstrate all 3 types of inheritance 1.single 2.multilevel 3.hierarchial](#assi-10)
 
 
 ## assi-1
@@ -496,6 +496,79 @@ public class NumberOperations {
 ```
 
 <img width="302" height="175" alt="image" src="https://github.com/user-attachments/assets/fe7be21e-8d38-427a-8157-a189807715cf" />
+
+## assi-10
+
+```
+// Base class
+public class A {
+
+    void showA() {
+        System.out.println("Class A (Parent)");
+    }
+
+    public static void main(String[] args) {
+
+        // Single Inheritance
+        System.out.println("Single Inheritance:");
+        B obj1 = new B();
+        obj1.showA();
+        obj1.showB();
+
+        // Multilevel Inheritance
+        System.out.println("\nMultilevel Inheritance:");
+        C obj2 = new C();
+        obj2.showA();
+        obj2.showB();
+        obj2.showC();
+
+        // Hierarchical Inheritance
+        System.out.println("\nHierarchical Inheritance:");
+        D obj3 = new D();
+        E obj4 = new E();
+
+        obj3.showA();
+        obj3.showD();
+
+        obj4.showA();
+        obj4.showE();
+    }
+}
+
+// Single Inheritance
+class B extends A {
+    void showB() {
+        System.out.println("Class B (Child of A)");
+    }
+}
+
+// Multilevel Inheritance
+class C extends B {
+    void showC() {
+        System.out.println("Class C (Child of B)");
+    }
+}
+
+// Hierarchical Inheritance
+class D extends A {
+    void showD() {
+        System.out.println("Class D (Another Child of A)");
+    }
+}
+
+class E extends A {
+    void showE() {
+        System.out.println("Class E (Another Child of A)");
+    }
+}
+```
+<img width="260" height="230" alt="image" src="https://github.com/user-attachments/assets/aad082ae-b2d5-4d14-a01c-5129ad16f25a" />
+
+
+
+
+
+
 
 
 
