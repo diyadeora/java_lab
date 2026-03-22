@@ -14,6 +14,8 @@
 
 [program-8 write a class of implementationoperation of matrix(3*3): 1.transpose 2.sum 3.multiply 4.sum of rows 5.sum of columns 6.sum of diagonal](#assi-8)
 
+[program-9 collect the code of c language for any 5 operation, convert the logic to java in object oriented fashion](#assi-9)
+
 
 
 
@@ -395,6 +397,106 @@ public class MatrixOperations {
 
 ```
 <img width="320" height="416" alt="image" src="https://github.com/user-attachments/assets/22b8ca3b-ba26-4dc7-a504-80db0b26191b" />
+
+## assi-9
+
+```
+public class NumberOperations {
+
+    int num = 5;     // for factorial & fibonacci
+    int pal = 121;   // for palindrome
+    int arm = 153;   // for armstrong
+
+    // 1. Factorial
+    void factorial() {
+        int fact = 1;
+
+        for (int i = 1; i <= num; i++) {
+            fact *= i;
+        }
+
+        System.out.println("Factorial of " + num + " = " + fact);
+    }
+
+    // 2. Fibonacci Series
+    void fibonacci() {
+        int a = 0, b = 1;
+
+        System.out.println("Fibonacci series:");
+
+        for (int i = 1; i <= num; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+
+        System.out.println();
+    }
+
+    // 3. Palindrome Number
+    void palindrome() {
+        int temp = pal;
+        int rev = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            rev = rev * 10 + digit;
+            temp /= 10;
+        }
+
+        if (pal == rev)
+            System.out.println(pal + " is Palindrome");
+        else
+            System.out.println(pal + " is Not Palindrome");
+    }
+
+    // 4. Armstrong Number
+    void armstrong() {
+        int temp = arm;
+        int sum = 0;
+
+        while (temp > 0) {
+            int digit = temp % 10;
+            sum += digit * digit * digit;
+            temp /= 10;
+        }
+
+        if (sum == arm)
+            System.out.println(arm + " is Armstrong");
+        else
+            System.out.println(arm + " is Not Armstrong");
+    }
+
+    // 5. Pattern
+    void pattern() {
+        System.out.println("Pattern:");
+
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    // Main method
+    public static void main(String[] args) {
+
+        NumberOperations obj = new NumberOperations();
+
+        obj.factorial();
+        obj.fibonacci();
+        obj.palindrome();
+        obj.armstrong();
+        obj.pattern();
+    }
+}
+
+```
+
+<img width="302" height="175" alt="image" src="https://github.com/user-attachments/assets/fe7be21e-8d38-427a-8157-a189807715cf" />
+
 
 
 
