@@ -18,7 +18,11 @@
 
 [program-10 demonstrate all 3 types of inheritance 1.single 2.multilevel 3.hierarchial](#assi-10)
 
+[program-11 write a program using three classes to print 1-100,1-100,1-100 with and without thread and analyse the output and repeat the same program using runnable interface](#assi-11)
 
+[program-12 using the concept of multithreading the output of all three threads must be synchronised (use join method)](#assi-12)
+
+[program-13 addition of two numbers using swing](#assi-13)
 ## assi-1
 ```
 public class Cla{
