@@ -23,6 +23,29 @@
 [program-12 using the concept of multithreading the output of all three threads must be synchronised (use join method)](#assi-12)
 
 [program-13 addition of two numbers using swing](#assi-13)
+
+[program-14 make a registration form with 10 elements and send the data into database(using jdbc connectivity)](#assi-14)
+
+[program-15 make one calculator in swing](#assi-15)
+
+[program-16 matrix addition using swing class](#assi-16)
+
+[program-17 create one jframe apply 10 buttons on that after clicking on each button a new button structure is created(circle,oval rectangle,etc...)](#assi-17)
+
+[program-18 just using mouse event craete a frame like paint brush with selection of colour and width ](#assi-18)
+
+[program-19 create a package of any 5 classes of your choice and import it](#assi-19)
+
+[program-20 create one package and sub package import and test it](#assi-20)
+
+[program-21 create one small array of size 5 apply array out of bounds exception using try catch and demonstrate the exception exactly in the same fashion demonstrate arithmetic exception](#assi-21)
+
+[program-22 to test the range of age of one student.write a program using user defined exception.](#assi-22)
+
+[program-23 file handling programs](#assi-23)
+
+[program-24 inheritance program using interface and abstract classes](#assi-24)
+
 ## assi-1
 ```
 public class Cla{
