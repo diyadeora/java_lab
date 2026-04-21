@@ -591,7 +591,7 @@ class E extends A {
 ```
 <img width="260" height="230" alt="image" src="https://github.com/user-attachments/assets/aad082ae-b2d5-4d14-a01c-5129ad16f25a" />
 
-## assi-1
+## assi-11
 
 '''
 class A extends Thread {
