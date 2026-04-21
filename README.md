@@ -591,6 +591,74 @@ class E extends A {
 ```
 <img width="260" height="230" alt="image" src="https://github.com/user-attachments/assets/aad082ae-b2d5-4d14-a01c-5129ad16f25a" />
 
+## assi-1
+
+'''
+class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("A (Normal): " + i);
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("B (Normal): " + i);
+        }
+    }
+}
+
+class C extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C (Thread): " + i);
+        }
+    }
+
+    void print() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("C (Normal): " + i);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        A a = new A();
+        B b = new B();
+        C c = new C();
+
+        // 🔹 Without Thread (Sequential)
+        System.out.println("----- WITHOUT THREAD -----");
+        a.print();
+        b.print();
+        c.print();
+
+        // 🔹 With Thread (Concurrent)
+        System.out.println("----- WITH THREAD -----");
+        a.start();
+        b.start();
+        c.start();
+    }
+}
+
+'''
+
 
 
 
