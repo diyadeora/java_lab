@@ -661,34 +661,51 @@ public class Main {
 
 ## assi-12
 
+
 '''
 
+
 class A extends Thread {
+
     public void run() {
+
         for (int i = 1; i <= 100; i++) {
+
             System.out.println("A: " + i);
         }
     }
 }
 
-class B extends Thread {
-    public void run() {
-        for (int i = 1; i <= 100; i++) {
-            System.out.println("B: " + i);
-        }
+class B extends Thread
+ {
+
+    public void run()
+ {
+
+        for (int i = 1; i <= 100; i++)
+ {
+            
+System.out.println("B: " + i);
+        
+}
     }
 }
 
 class C extends Thread {
+
     public void run() {
+
         for (int i = 1; i <= 100; i++) {
+
             System.out.println("C: " + i);
         }
     }
 }
 
 public class Main {
+
     public static void main(String[] args) {
+
         A a = new A();
         B b = new B();
         C c = new C();
@@ -703,7 +720,9 @@ public class Main {
             c.start();
             c.join();   // wait until C finishes
 
-        } catch (InterruptedException e) {
+        } 
+catch (InterruptedException e) {
+
             System.out.println(e);
         }
     }
