@@ -754,6 +754,67 @@ public class Main {
 
 '''
 
+## assi-14
+
+'''
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // 🔹 Taking 10 inputs (Registration Form)
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Email: ");
+        String email = sc.nextLine();
+
+        System.out.print("Enter Password: ");
+        String password = sc.nextLine();
+
+        System.out.print("Enter Gender: ");
+        String gender = sc.nextLine();
+
+        System.out.print("Enter Course: ");
+        String course = sc.nextLine();
+
+        System.out.print("Enter Address: ");
+        String address = sc.nextLine();
+
+        System.out.print("Enter Phone: ");
+        String phone = sc.nextLine();
+
+        System.out.print("Enter Age: ");
+        String age = sc.nextLine();
+
+        System.out.print("Enter City: ");
+        String city = sc.nextLine();
+
+        System.out.print("Enter State: ");
+        String state = sc.nextLine();
+
+        // 🔹 Display Data (Simulating Database Storage)
+        System.out.println("\n--- Registration Data ---");
+        System.out.println("Name: " + name);
+        System.out.println("Email: " + email);
+        System.out.println("Password: " + password);
+        System.out.println("Gender: " + gender);
+        System.out.println("Course: " + course);
+        System.out.println("Address: " + address);
+        System.out.println("Phone: " + phone);
+        System.out.println("Age: " + age);
+        System.out.println("City: " + city);
+        System.out.println("State: " + state);
+
+        System.out.println("\nData Stored Successfully (Simulated)");
+    }
+}
+
+'''
+
 
 
 
