@@ -1198,7 +1198,253 @@ public class ShapeDrawer extends JFrame implements ActionListener {
         new ShapeDrawer();
     }
 }
+
 ```
+## assi-18
+
+```
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class PaintBrush extends JFrame {
+
+    // Drawing panel
+    DrawArea area;
+
+    public PaintBrush() {
+
+        setTitle("Paint Brush App");
+        setSize(800, 600);
+        setLayout(new BorderLayout());
+
+        area = new DrawArea();
+        add(area, BorderLayout.CENTER);
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new PaintBrush();
+    }
+}
+
+// ---------------- DRAWING PANEL ----------------
+class DrawArea extends JPanel implements MouseListener, MouseMotionListener {
+
+    int prevX, prevY;
+    Color currentColor = Color.BLACK;
+    int brushSize = 5;
+
+    public DrawArea() {
+        addMouseListener(this);
+        addMouseMotionListener(this);
+
+        setBackground(Color.WHITE);
+
+        // Control Panel
+        JPanel controls = new JPanel();
+
+        JButton colorBtn = new JButton("Choose Color");
+        JButton small = new JButton("Small");
+        JButton medium = new JButton("Medium");
+        JButton large = new JButton("Large");
+
+        controls.add(colorBtn);
+        controls.add(small);
+        controls.add(medium);
+        controls.add(large);
+
+        setLayout(new BorderLayout());
+        add(controls, BorderLayout.NORTH);
+
+        // Color chooser
+        colorBtn.addActionListener(e -> {
+            Color newColor = JColorChooser.showDialog(null, "Pick a Color", currentColor);
+            if (newColor != null) {
+                currentColor = newColor;
+            }
+        });
+
+        // Brush sizes
+        small.addActionListener(e -> brushSize = 3);
+        medium.addActionListener(e -> brushSize = 7);
+        large.addActionListener(e -> brushSize = 15);
+    }
+
+    // Draw while dragging mouse
+    public void mouseDragged(MouseEvent e) {
+
+        Graphics g = getGraphics();
+        g.setColor(currentColor);
+        g.fillOval(e.getX(), e.getY(), brushSize, brushSize);
+    }
+
+    public void mousePressed(MouseEvent e) {
+        prevX = e.getX();
+        prevY = e.getY();
+    }
+
+    public void mouseMoved(MouseEvent e) {}
+    public void mouseClicked(MouseEvent e) {}
+    public void mouseReleased(MouseEvent e) {}
+    public void mouseEntered(MouseEvent e) {}
+    public void mouseExited(MouseEvent e) {}
+}
+
+```
+
+## assi-19
+
+```
+package mypack;
+
+public class Student {
+    public void showStudent() {
+        System.out.println("Student class called");
+    }
+}
+
+package mypack;
+
+public class Teacher {
+    public void showTeacher() {
+        System.out.println("Teacher class called");
+    }
+}
+
+package mypack;
+
+public class Course {
+    public void showCourse() {
+        System.out.println("Course class called");
+    }
+}
+
+package mypack;
+
+public class Library {
+    public void showLibrary() {
+        System.out.println("Library class called");
+    }
+}
+
+package mypack;
+
+public class College {
+    public void showCollege() {
+        System.out.println("College class called");
+    }
+}
+
+```
+
+## assi-20
+
+```
+
+```
+
+## assi-21
+
+```
+
+public class ExceptionDemo {
+
+    public static void main(String[] args) {
+
+        // ---------------- ARRAY EXCEPTION ----------------
+        try {
+            int arr[] = new int[5];
+
+            // Valid indexes: 0 to 4
+            arr[0] = 10;
+            arr[1] = 20;
+            arr[2] = 30;
+            arr[3] = 40;
+            arr[4] = 50;
+
+            // ❌ This will cause ArrayIndexOutOfBoundsException
+            arr[5] = 60;
+
+            System.out.println("Array value: " + arr[5]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Exception caught: Array index is out of bounds!");
+        }
+
+        System.out.println("------------------------------------------------");
+
+        // ---------------- ARITHMETIC EXCEPTION ----------------
+        try {
+            int a = 10;
+            int b = 0;
+
+            // ❌ Division by zero → ArithmeticException
+            int result = a / b;
+
+            System.out.println("Result: " + result);
+
+        } catch (ArithmeticException e) {
+            System.out.println("Exception caught: Cannot divide by zero!");
+        }
+
+        System.out.println("Program executed successfully.");
+    }
+}
+
+```
+## assi-22
+
+```
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+import java.util.Scanner;
+
+public class StudentAgeCheck {
+
+    public static void checkAge(int age) throws InvalidAgeException {
+
+        if (age < 18) {
+            throw new InvalidAgeException("Age is not valid for admission (must be 18 or above)");
+        } else {
+            System.out.println("Age is valid. Student is eligible.");
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter student age: ");
+        int age = sc.nextInt();
+
+        try {
+            checkAge(age);
+        } catch (InvalidAgeException e) {
+            System.out.println("Exception caught: " + e.getMessage());
+        }
+
+        System.out.println("Program ended successfully.");
+    }
+}
+
+```
+## assi-23
+
+```
+
+
+
+
+
+
+
 
 
 
