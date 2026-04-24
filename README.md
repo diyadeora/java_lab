@@ -815,6 +815,396 @@ public class Main {
 
 '''
 
+## assi-14
+
+```
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.sql.*;
+
+public class RegistrationForm extends JFrame implements ActionListener {
+
+    JTextField name, email, phone, address, dob, course, city, pincode;
+    JPasswordField password;
+    JRadioButton male, female;
+    JButton submit;
+
+    public RegistrationForm() {
+
+        setTitle("Registration Form");
+        setSize(400, 600);
+        setLayout(new GridLayout(12,2));
+
+        add(new JLabel("Name:"));
+        name = new JTextField();
+        add(name);
+
+        add(new JLabel("Email:"));
+        email = new JTextField();
+        add(email);
+
+        add(new JLabel("Password:"));
+        password = new JPasswordField();
+        add(password);
+
+        add(new JLabel("Gender:"));
+        JPanel genderPanel = new JPanel();
+        male = new JRadioButton("Male");
+        female = new JRadioButton("Female");
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(male);
+        bg.add(female);
+        genderPanel.add(male);
+        genderPanel.add(female);
+        add(genderPanel);
+
+        add(new JLabel("Phone:"));
+        phone = new JTextField();
+        add(phone);
+
+        add(new JLabel("Address:"));
+        address = new JTextField();
+        add(address);
+
+        add(new JLabel("DOB (YYYY-MM-DD):"));
+        dob = new JTextField();
+        add(dob);
+
+        add(new JLabel("Course:"));
+        course = new JTextField();
+        add(course);
+
+        add(new JLabel("City:"));
+        city = new JTextField();
+        add(city);
+
+        add(new JLabel("Pincode:"));
+        pincode = new JTextField();
+        add(pincode);
+
+        submit = new JButton("Register");
+        submit.addActionListener(this);
+        add(submit);
+
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
+        String userName = name.getText();
+        String userEmail = email.getText();
+        String userPass = new String(password.getPassword());
+        String userGender = male.isSelected() ? "Male" : "Female";
+        String userPhone = phone.getText();
+        String userAddress = address.getText();
+        String userDOB = dob.getText();
+        String userCourse = course.getText();
+        String userCity = city.getText();
+        String userPincode = pincode.getText();
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+
+            Connection con = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/registration_db", "root", "password");
+
+            String query = "INSERT INTO users(name,email,password,gender,phone,address,dob,course,city,pincode) VALUES(?,?,?,?,?,?,?,?,?,?)";
+
+            PreparedStatement ps = con.prepareStatement(query);
+
+            ps.setString(1, userName);
+            ps.setString(2, userEmail);
+            ps.setString(3, userPass);
+            ps.setString(4, userGender);
+            ps.setString(5, userPhone);
+            ps.setString(6, userAddress);
+            ps.setString(7, userDOB);
+            ps.setString(8, userCourse);
+            ps.setString(9, userCity);
+            ps.setString(10, userPincode);
+
+            ps.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Registration Successful!");
+
+            con.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) {
+        new RegistrationForm();
+    }
+}
+
+```
+## assi-15
+
+```
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Calculator extends JFrame implements ActionListener {
+
+    JTextField tf;
+    JButton b[] = new JButton[16];
+    String s[] = {"7","8","9","/",
+                  "4","5","6","*",
+                  "1","2","3","-",
+                  "0","C","=","+"};
+
+    double num1, num2, result;
+    char operator;
+
+    public Calculator() {
+
+        setTitle("Calculator");
+        setSize(300, 400);
+        setLayout(new BorderLayout());
+
+        tf = new JTextField();
+        tf.setFont(new Font("Arial", Font.BOLD, 20));
+        add(tf, BorderLayout.NORTH);
+
+        JPanel p = new JPanel();
+        p.setLayout(new GridLayout(4,4));
+
+        for(int i=0;i<16;i++) {
+            b[i] = new JButton(s[i]);
+            b[i].setFont(new Font("Arial", Font.BOLD, 18));
+            b[i].addActionListener(this);
+            p.add(b[i]);
+        }
+
+        add(p, BorderLayout.CENTER);
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
+        String str = e.getActionCommand();
+
+        if(str.charAt(0) >= '0' && str.charAt(0) <= '9') {
+            tf.setText(tf.getText() + str);
+        }
+        else if(str.charAt(0) == 'C') {
+            tf.setText("");
+        }
+        else if(str.charAt(0) == '=') {
+            num2 = Double.parseDouble(tf.getText());
+
+            switch(operator) {
+                case '+': result = num1 + num2; break;
+                case '-': result = num1 - num2; break;
+                case '*': result = num1 * num2; break;
+                case '/': result = num1 / num2; break;
+            }
+
+            tf.setText("" + result);
+        }
+        else {
+            num1 = Double.parseDouble(tf.getText());
+            operator = str.charAt(0);
+            tf.setText("");
+        }
+    }
+
+    public static void main(String[] args) {
+        new Calculator();
+    }
+}
+
+```
+
+## assi-16
+
+```
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class MatrixAddition extends JFrame implements ActionListener {
+
+    JTextField a[][] = new JTextField[2][2];
+    JTextField b[][] = new JTextField[2][2];
+    JTextField c[][] = new JTextField[2][2];
+
+    JButton addBtn;
+
+    public MatrixAddition() {
+
+        setTitle("Matrix Addition");
+        setSize(400, 300);
+        setLayout(new GridLayout(4, 4));
+
+        // Matrix A
+        for(int i=0;i<2;i++) {
+            for(int j=0;j<2;j++) {
+                a[i][j] = new JTextField();
+                add(a[i][j]);
+            }
+        }
+
+        // Matrix B
+        for(int i=0;i<2;i++) {
+            for(int j=0;j<2;j++) {
+                b[i][j] = new JTextField();
+                add(b[i][j]);
+            }
+        }
+
+        // Result Matrix C
+        for(int i=0;i<2;i++) {
+            for(int j=0;j<2;j++) {
+                c[i][j] = new JTextField();
+                c[i][j].setEditable(false);
+                add(c[i][j]);
+            }
+        }
+
+        addBtn = new JButton("Add");
+        addBtn.addActionListener(this);
+        add(addBtn);
+
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+
+        try {
+            for(int i=0;i<2;i++) {
+                for(int j=0;j<2;j++) {
+
+                    int num1 = Integer.parseInt(a[i][j].getText());
+                    int num2 = Integer.parseInt(b[i][j].getText());
+
+                    int sum = num1 + num2;
+                    c[i][j].setText(String.valueOf(sum));
+                }
+            }
+        } catch(Exception ex) {
+            JOptionPane.showMessageDialog(this, "Enter valid numbers!");
+        }
+    }
+
+    public static void main(String[] args) {
+        new MatrixAddition();
+    }
+}
+
+```
+
+## assi-17
+
+```
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class ShapeDrawer extends JFrame implements ActionListener {
+
+    JButton[] buttons = new JButton[10];
+    String[] names = {
+        "Circle", "Oval", "Rectangle", "Square", "Line",
+        "Triangle", "Arc", "RoundRect", "Fill Circle", "Fill Rectangle"
+    };
+
+    String shape = "";
+
+    public ShapeDrawer() {
+
+        setTitle("Shape Drawer");
+        setSize(600, 500);
+        setLayout(new FlowLayout());
+
+        // Create 10 buttons
+        for (int i = 0; i < 10; i++) {
+            buttons[i] = new JButton(names[i]);
+            buttons[i].addActionListener(this);
+            add(buttons[i]);
+        }
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        shape = e.getActionCommand(); // get clicked button name
+        repaint(); // redraw frame
+    }
+
+    public void paint(Graphics g) {
+        super.paint(g);
+
+        g.setColor(Color.BLUE);
+
+        int x = 200, y = 150;
+
+        switch (shape) {
+
+            case "Circle":
+                g.drawOval(x, y, 100, 100);
+                break;
+
+            case "Oval":
+                g.drawOval(x, y, 150, 80);
+                break;
+
+            case "Rectangle":
+                g.drawRect(x, y, 150, 100);
+                break;
+
+            case "Square":
+                g.drawRect(x, y, 100, 100);
+                break;
+
+            case "Line":
+                g.drawLine(x, y, x + 150, y + 100);
+                break;
+
+            case "Triangle":
+                g.drawLine(x, y, x + 80, y - 100);
+                g.drawLine(x + 80, y - 100, x + 160, y);
+                g.drawLine(x, y, x + 160, y);
+                break;
+
+            case "Arc":
+                g.drawArc(x, y, 120, 100, 0, 180);
+                break;
+
+            case "RoundRect":
+                g.drawRoundRect(x, y, 150, 100, 30, 30);
+                break;
+
+            case "Fill Circle":
+                g.fillOval(x, y, 100, 100);
+                break;
+
+            case "Fill Rectangle":
+                g.fillRect(x, y, 150, 100);
+                break;
+        }
+    }
+
+    public static void main(String[] args) {
+        new ShapeDrawer();
+    }
+}
+```
+
+
+
+
+
+
 
 
 
