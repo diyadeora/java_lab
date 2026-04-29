@@ -1346,6 +1346,8 @@ public class College {
 
 ```
 
+
+
 ```
 
 ## assi-21
@@ -1438,6 +1440,44 @@ public class StudentAgeCheck {
 
 ```
 ## assi-23
+
+```
+java.io.*;
+
+public class FileHandlingDemo
+{
+    public static void main(String args[]) throws Exception
+    {
+        // Writing into file
+        FileWriter fw = new FileWriter("data.txt");
+        fw.write("Hello Java");
+        fw.close();
+
+        // Character by Character Reading
+        System.out.println("Character by Character:");
+        FileReader fr = new FileReader("data.txt");
+
+        int ch;
+        while((ch = fr.read()) != -1)
+        {
+            System.out.print((char)ch);
+        }
+        fr.close();
+
+        System.out.println();
+
+        // Byte by Byte Reading
+        System.out.println("Byte by Byte:");
+        FileInputStream fin = new FileInputStream("data.txt");
+
+        int b;
+        while((b = fin.read()) != -1)
+        {
+            System.out.print((char)b);
+        }
+        fin.close();
+    }
+}
 
 ```
 
