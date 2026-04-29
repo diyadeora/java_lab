@@ -1024,6 +1024,9 @@ public class Calculator extends JFrame implements ActionListener {
 
 ```
 
+<img width="724" height="562" alt="Screenshot 2026-04-21 184800" src="https://github.com/user-attachments/assets/9a19b611-9954-4a2d-b624-e5f3ba599021" />
+
+
 ## assi-16
 
 ```
@@ -1202,6 +1205,10 @@ public class ShapeDrawer extends JFrame implements ActionListener {
 }
 
 ```
+
+<img width="625" height="614" alt="Screenshot 2026-04-21 185419" src="https://github.com/user-attachments/assets/35c5b72a-e1bb-40ad-a9a4-9347df7999c8" />
+
+
 ## assi-18
 
 ```
