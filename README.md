@@ -1345,7 +1345,35 @@ public class College {
 ## assi-20
 
 ```
+public class PackageDemo
+{
+    // Simulating package mypack
+    static class Addition
+    {
+        void add(int a, int b)
+        {
+            System.out.println("Sum = " + (a+b));
+        }
+    }
 
+    // Simulating subpackage mypack.subpack
+    static class Multiply
+    {
+        void mul(int a, int b)
+        {
+            System.out.println("Product = " + (a*b));
+        }
+    }
+
+    public static void main(String args[])
+    {
+        Addition obj1 = new Addition();
+        Multiply obj2 = new Multiply();
+
+        obj1.add(10,5);
+        obj2.mul(10,5);
+    }
+}
 
 
 ```
