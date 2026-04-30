@@ -659,6 +659,10 @@ public class Main {
 
 '''
 
+<img width="190" height="879" alt="Screenshot 2026-04-17 193704" src="https://github.com/user-attachments/assets/a8015ed0-a199-4eac-9f01-8a30d7fa130a" />
+<img width="119" height="811" alt="Screenshot 2026-04-17 193743" src="https://github.com/user-attachments/assets/c7f267f1-b530-4adb-bb4e-2e83f50da83f" />
+<img width="142" height="834" alt="Screenshot 2026-04-17 193815" src="https://github.com/user-attachments/assets/ab092d75-4b99-4f71-8a3a-ede911f5edf5" />
+<img width="121" height="850" alt="Screenshot 2026-04-17 193842" src="https://github.com/user-attachments/assets/837730b6-6d29-4aeb-a913-9e32178e1e0e" />
 
 
 ## assi-12
@@ -732,6 +736,14 @@ catch (InterruptedException e) {
 
 '''
 
+<img width="79" height="881" alt="Screenshot 2026-04-17 194151" src="https://github.com/user-attachments/assets/641aa303-2198-4f94-ba1f-580a1092169d" />
+<img width="138" height="748" alt="Screenshot 2026-04-17 194213" src="https://github.com/user-attachments/assets/644d7a6f-5b4c-405c-830d-ae69a9aec86c" />
+<img width="100" height="880" alt="Screenshot 2026-04-17 194223" src="https://github.com/user-attachments/assets/ba768762-153f-4402-afba-ec51bd2dea7b" />
+<img width="71" height="895" alt="Screenshot 2026-04-17 194245" src="https://github.com/user-attachments/assets/0be3d3a3-8d28-4383-bea5-08ae4459cab7" />
+<img width="47" height="886" alt="Screenshot 2026-04-17 194314" src="https://github.com/user-attachments/assets/98502a28-c5b4-41ab-8891-d2fb8f6823ee" />
+<img width="49" height="881" alt="Screenshot 2026-04-17 194335" src="https://github.com/user-attachments/assets/f6cd684c-c8e2-4370-86b1-e31e812a64e7" />
+<img width="64" height="557" alt="Screenshot 2026-04-17 194356" src="https://github.com/user-attachments/assets/db89ecab-0a8b-411c-a3d0-3346bb6562cd" />
+
 ## assi-13
 
 '''
@@ -755,6 +767,9 @@ public class Main {
 }
 
 '''
+
+<img width="239" height="83" alt="Screenshot 2026-04-17 194657" src="https://github.com/user-attachments/assets/ed348d4d-f176-409b-a85b-c394654a7939" />
+
 
 ## assi-14
 
@@ -816,6 +831,9 @@ public class Main {
 }
 
 '''
+
+<img width="239" height="83" alt="Screenshot 2026-04-17 194657" src="https://github.com/user-attachments/assets/ab3fe9dc-e652-4b8b-a75e-9be70cc50f81" />
+
 
 ## assi-14
 
@@ -944,6 +962,10 @@ public class RegistrationForm extends JFrame implements ActionListener {
 }
 
 ```
+
+<img width="386" height="645" alt="Screenshot 2026-04-29 161819" src="https://github.com/user-attachments/assets/68d73ee7-53ed-4e06-9eb0-42ac17b46fe8" />
+
+
 ## assi-15
 
 ```
@@ -1105,6 +1127,9 @@ public class MatrixAddition extends JFrame implements ActionListener {
 }
 
 ```
+
+<img width="177" height="240" alt="Screenshot 2026-04-21 185129" src="https://github.com/user-attachments/assets/7cfe60f7-f823-4308-9894-0dbb1da129de" />
+
 
 ## assi-17
 
@@ -1304,6 +1329,9 @@ class DrawArea extends JPanel implements MouseListener, MouseMotionListener {
 
 ```
 
+<img width="685" height="366" alt="Screenshot 2026-04-25 160231" src="https://github.com/user-attachments/assets/ce60b2c3-baf5-4a95-8e21-10875e653854" />
+
+
 ## assi-19
 
 ```
@@ -1349,6 +1377,9 @@ public class College {
 
 ```
 
+<img width="185" height="144" alt="Screenshot 2026-04-24 014245" src="https://github.com/user-attachments/assets/9a076a41-3ad1-4dd6-8248-652106968c63" />
+
+
 ## assi-20
 
 ```
@@ -1384,6 +1415,9 @@ public class PackageDemo
 
 
 ```
+
+<img width="144" height="61" alt="Screenshot 2026-04-25 160831" src="https://github.com/user-attachments/assets/68976697-51d9-48a8-8d00-ab55a85e8d8e" />
+
 
 ## assi-21
 
@@ -1434,6 +1468,10 @@ public class ExceptionDemo {
 }
 
 ```
+
+<img width="402" height="240" alt="Screenshot 2026-04-25 161104" src="https://github.com/user-attachments/assets/b6e0efb7-8cbe-48f3-8e66-32b63727b0e6" />
+
+
 ## assi-22
 
 ```
@@ -1474,6 +1512,10 @@ public class StudentAgeCheck {
 }
 
 ```
+
+<img width="491" height="66" alt="Screenshot 2026-04-25 161405" src="https://github.com/user-attachments/assets/d29bab7f-7e9e-4ca0-a3e3-23b366690b54" />
+
+
 ## assi-23
 
 ```
@@ -1515,6 +1557,9 @@ public class FileHandlingDemo
 }
 
 ```
+
+<img width="275" height="162" alt="Screenshot 2026-04-25 161622" src="https://github.com/user-attachments/assets/b64dbdc9-9ca7-4e2d-a7ee-052660919be7" />
+
 
 
 
